@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>팀 소개</title>
+    <link href="https://fonts.googleapis.com/css2?family=SUIT:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+    <style>
+        *{background-color: antiquewhite !important;}
+        body {
+            font-family: "Jua", sans-serif;
+            padding: 30px;
+            background-color: #fdfdfd;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 40px;
+        }
+
+        h1 span {
+            color: #ffb400;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 40px;
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .card {
+            min-height: 170px;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            padding: 10px;
+            min-width: 180px;
+            text-align: center;
+        }
+
+        .card-content {
+            position: relative;
+        }
+
+        .card,
+        .card * {
+            background-color: white !important;
+        }
+
+        /* 기본 내용 */
+        .default-content {
+            transition: opacity 0.3s ease;
+        }
+
+        /* Hover 내용 기본적으로 숨김 */
+        .hover-content {
+            margin-bottom: 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+            background-color: white;
+        }
+
+        /* hover 시 기본 내용 숨기고 hover 내용 표시 */
+        .card:hover .default-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .card:hover .hover-content {
+            opacity: 1;
+            visibility: visible;
+        }
+        .card:hover {
+            box-shadow: 0 0 35px #ffb400;
+
+        }
+
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+
+        .name {
+            font-size: 1.2em;
+            font-weight: 700;
+            margin: 6px 0;
+        }
+
+        .mbti,
+        .hobby,
+        .intro {
+            font-size: 0.9em;
+            margin: 4px 0;
+        }
+
+        .mbti {
+            font-weight: 500;
+            color: #222;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hobby {
+            font-weight: 500;
+            color: #da3f31;
+        }
+
+        .intro {
+            font-weight: lighter;
+            color: #222;
+        }
+
+        .divider {
+            border: none;
+            border-top: 0.7px solid #ddd;
+            margin-top: 10px;
+            margin-bottom: 13%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><span> 🏫 교육 </span>팀을 소개합니다 🏫</h1>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-content">
+                <img src="https://dynamic-assets.gather.town/v2/sprite-profile/avatar-Owh3rJLGGrWnafZevZoC.Qdzy0P0JXAJy4ukHIqNb.6lc6LksrQBu_YmRwgodl.uelBgm8fS0qdpl7vVBoj.K6tbhYXBDUPkIw6ijSvq.kNxsCad0RQNKB2G0kOTb.png?d="
+                    alt="임지빈" class="profile-img" />
+                <div class="default-content">
+                    <div class="name">임지빈</div>
+                    <div class="mbti">MBTI: ISTJ</div>
+                </div>
+                <div class="hover-content">
+                    <div class="hobby">취미: 운동</div>
+                    <hr class="divider" />
+                    <div class="intro"><br>맛집탐방 좋아하고 <br> 서버 개발자가 되고싶습니다 !
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="https://dynamic-assets.gather.town/v2/sprite-profile/avatar-gV7nljNpXAGHgAEnbBWv.AgRQf0McpPKEmNDfBFma.eSKsmeEjQBetf963zrNt.JBlnQR1fRnap4hLq79xf.qXZsUMXd6wr2ICupUTcz.FWjJhSuW7t8HxrD6cm2L.nmAxhApsTRScqWW60ylJ.png?d="
+                    alt="이병강" class="profile-img" />
+                <div class="default-content">
+                    <div class="name">이병강</div>
+                    <div class="mbti">MBTI: ENFP/J</div>
+                </div>
+                <div class="hover-content">
+                    <div class="hobby">취미: 운동, 노래듣기, 게임, 요리</div>
+                    <hr class="divider" />
+                    <div class="intro">만나서 반갑습니다. <br> 이병강입니다. <br> 함께 열심히 배우고 성장해가요! <br> 2기 파이팅!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="https://dynamic-assets.gather.town/v2/sprite-profile/avatar-ty0CoZao8eIAgVnSKFg7.jA106IFROWICC1zFh8Bn.RjHZpJroqxJb85HeASYK.XzB3MbRhHVYJZTw9kvXM.pDny_4XoRrGuq64ZehYX.yWfAMVczQuewJd3tqomw.RhTmC28lTQJ7MKeDlGwn.png?d="
+                    alt="김민지" class="profile-img" />
+                <div class="default-content">
+                    <div class="name">김민지</div>
+                    <div class="mbti">MBTI: INTP</div>
+                </div>
+                <div class="hover-content">
+                    <div class="hobby">취미: 요가</div>
+                    <hr class="divider" />
+                    <div class="intro"><br>수련하는 코린이입니다. <br> 스펀지같이 지식 흡수할 예정..😎
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="https://dynamic-assets.gather.town/v2/sprite-profile/avatar-gV7nljNpXAGHgAEnbBWv.3ZnyOry7q9szgHCU1URo.GOIono5TlL1mMHqoryfb.R-mO0WjmRySf-DdFAMmb.qXZsUMXd6wr2ICupUTcz.y64RWNYY6TklfPr7ip1T.png?d="
+                    alt="남윤호" class="profile-img" />
+                <div class="default-content">
+                    <div class="name">남윤호</div>
+                    <div class="mbti">MBTI: INTP</div>
+                </div>
+                <div class="hover-content">
+                    <div class="hobby">취미: 게임</div>
+                    <hr class="divider" />
+                    <div class="intro"><br>모두와 함께 <br> 성장해 나가고 싶습니다. <br> 잘 부탁드립니다!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="https://dynamic-assets.gather.town/v2/sprite-profile/avatar-hSqpkZ1fQmG7vY1LorzN.WfW3xDUm3U2xGHhhxdm9.vNyZ5s4TS2uOwaIewp21.8XDezleoDaM1zLN2fBlc.HVnnjByjqs6SVuosEHQ9.GgWUsCOWS4m_LFi3R0r_.QTmUEdobRxCrokabEzjV.7vhYMNK7IY2lPRIKysN7.uLgHMpwmBDtOlYCbHXen.png?d="
+                    alt="이재원" class="profile-img" />
+                <div class="default-content">
+                    <div class="name">이재원</div>
+                    <div class="mbti">MBTI: ISTP</div>
+                </div>
+                <div class="hover-content">
+                    <div class="hobby">취미: 운동, 드라마 보기</div>
+                    <hr class="divider" />
+                    <div class="intro">안녕하세요. <br> 이재원입니다. <br> 재밌는 드라마 추천 해주세요! <br>잘 부탁드립니다!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="https://dynamic-assets.gather.town/v2/sprite-profile/avatar-h2cCVQiEIM4lLFGydTUf.aPlQphKGYv93WrQWPhtm.T2QA1xeMQEWa1Vx8MiIL.R-mO0WjmRySf-DdFAMmb.UJy0fOWWJ9sdtdTfnVDz.PV_08I1qT3CsZjiS69oP.p2xnRe01TlCWDJw1JBkr.png?d=" alt="이준섭" class="profile-img" />
+                <div class="default-content">
+                    <div class="name">이준섭</div>
+                    <div class="mbti">MBTI: ISTP</div>
+                </div>
+                <div class="hover-content">
+                    <div class="hobby">취미: 맛집탐방</div>
+                    <hr class="divider" />
+                    <div class="intro">안녕하세요.
+                        <br>이준섭입니다.
+                        <br>코딩 잘하고 싶습니다. <br> 잘부탁드립니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="https://dynamic-assets.gather.town/v2/sprite-profile/avatar-ty0CoZao8eIAgVnSKFg7.Qdzy0P0JXAJy4ukHIqNb.xpDOheMZTV6E5a0pBcqu.EhWakmxiRuuoGNNT1i7W.UJy0fOWWJ9sdtdTfnVDz.O6jcAUe4T-2Y99HJIURB.png?d=" alt="정모경" class="profile-img" />
+                <div class="default-content">
+                    <div class="name">정모경</div>
+                    <div class="mbti">MBTI: INTJ</div>
+                </div>
+                <div class="hover-content">
+                    <div class="hobby">취미: 보드게임</div>
+                    <hr class="divider" />
+                    <div class="intro">안녕하세요.
+                        <br>정모경입니다.
+                        <br>보드게임 좋아하시는 분 계시나요?
+                        <br>열심히 하겠습니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="https://dynamic-assets.gather.town/v2/sprite-profile/avatar-ty0CoZao8eIAgVnSKFg7.ZQ4DcK9PT2-stmXKVLvZ.JcgQ2aCVLLY7F5zPTm5p.mqmGVqAwgMaQzjgiFqka.wphl8X1IEynhSAEGJFn9.D4rFNcCPTtuAue2l9OCE.I3F89zbSnk9wD43ek3Ae.png?d=" alt="정수연" class="profile-img" />
+                <div class="default-content">
+                    <div class="name">정수연</div>
+                    <div class="mbti">MBTI: ISFJ/T</div>
+                </div>
+                <div class="hover-content">
+                    <div class="hobby">취미: 여행/스케이트</div>
+                    <hr class="divider" />
+                    <div class="intro">안녕하세요.
+                        <br>AM2기 정수연입니다.
+                        <br>교육프로그램을 통해서 
+                        <br>많은 것을 배워가고 싶습니다. 
+                        <br>앞으로 잘 부탁드립니다!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="https://dynamic-assets.gather.town/v2/sprite-profile/avatar-ty0CoZao8eIAgVnSKFg7.Pvra6NsY5tRGVO0WRZT0.VtLV_8n-SGWQmxvPJ0rC.Ir8tM7guRVqhvkFjr2p4.yzrkwnOBThC3VfHSlGQ0.UJy0fOWWJ9sdtdTfnVDz.RCUyP5uuXPcwQ9WLBnWQ.ihNno1Nxqh3PJPWfbI8f.kNxsCad0RQNKB2G0kOTb.png?d=" alt="최홍혁" class="profile-img" />
+                <div class="default-content">
+                    <div class="name">최홍혁</div>
+                    <div class="mbti">MBTI: ENFP</div>
+                </div>
+                <div class="hover-content">
+                    <div class="hobby">취미: 스킨스쿠버</div>
+                    <hr class="divider" />
+                    <div class="intro">안녕하세요.
+                        <br>지재권 업무를 하다가
+                        <br>새롭게 개발업무를 해보고자
+                        <br>시작했습니다. 
+                        <br>잘부탁드립니다!!
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
